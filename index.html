@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>eStat - Statistical Package</title>
+
+
+  <!-- Bootstrap Scripts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Fontawesome (Icons) -->
+  <script src="https://kit.fontawesome.com/8540ab94fa.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,900;1,100;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Fav Icon <-->
+  <link rel="icon" href="images/apple-touch-icon.png" />
+
+</head>
+
+<body>
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+      <!--! Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">eStat</a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <!-- ? Dropdown Menu-->
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="#cta">eStat Edu</a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item"><a href="#" class="nav__link">Middle School</a></li>
+                  <li class="dropdown__item"><a href="#" class="nav__link">High School</a></li>
+                  <li class="dropdown__item"><a href="#" class="nav__link">University</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#pricing">eLearning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#footer">eStat Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--! Title -->
+      <div class="row">
+        <div class="col-lg-6 mainpage-content">
+          <h1 class="main-heading">
+            eStat is a web-based, dynamic graphical freeware aimed to provide
+            better experience of statistics for students around the world.
+          </h1>
+          <button class="btn explore-btn btn-lg download-button" type="button">
+            <span class="fa-solid fa-chart-pie"></span> Explore eStat
+          </button>
+          <button class="btn btn-outline-light btn-lg download-button" type="button">
+            <span class="fa-solid fa-magnifying-glass"></span> Explore More
+          </button>
+        </div>
+
+        <div class="col-lg-6">
+          <!--! Animation -->
+          <div id="perspective">
+            <div id="container"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--! Features -->
+  <section class="white-section" id="features">
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <span class="icon fa-solid fa-house fa-4x"></span>
+        <h3 class="feature-heading">eStat Middle School</h3>
+        <p>eStat Middle School is specifically designed the statistics education of Middle School students. In this section, you can easily practice such statistical tools as Bar Graph, Pie Chart, Line Graph, Word Cloud, Stem & Leaf Plot, Histogram, and Correlation Coefficiencts. </p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <span class="icon fa-sharp fa-solid fa-building-columns fa-4x"></span>
+        <h3 class="feature-heading">eStat High School</h3>
+        <p>eStat High School is primarily occupied with the further statistical tools offered for students studying in High School level. In this section, you can closely get to know numerous Theories of Probability, Law of Large Numbers, Dicrete, Binomial, Normal Distribution and much more.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="icon fa-solid fa-graduation-cap fa-4x"></i>
+        <h3 class="feature-heading">eStat University</h3>
+        <p>In eStat University, you can benefit from more advanced statistical tools along with the topics involving high and middle school level. In this section, eStat gives you the opportunity to master yourself in Estimations, Testing Hypothesis, Regression, Time Series and even, much more topics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--! Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-heading">
+            I no longer have to airdrop stupid thing to reach the person next
+            to me. I think sparky saves our lives by intergating offline
+            sparks into online-based meeting platform.
+          </h2>
+          <img class="testimonials-img" src="images/bitmoji-1.jpeg" alt="dog-profile" />
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-heading">
+            I used to be so introvert in public areas, but with sparky's help,
+            I can now shoot my shot on the people that I see in real-time.
+          </h2>
+          <img class="testimonials-img" src="images/bitmoji-2.jpeg" alt="lady-profile" />
+          <em>Math, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!--! Press -->
+  <section class="colored-section" id="press">
+    <img class="press-img" src="images/TechCrunch.png" alt="tc-logo" />
+    <img class="press-img" src="images/tnw.png" alt="tnw-logo" />
+    <img class="press-img" src="images/bizinsider.png" alt="biz-insider-logo" />
+    <img class="press-img" src="images/mashable.png" alt="mashable-logo" />
+  </section>
+
+  <!--! Pricing -->
+  <!-- <section class="white-section" id="pricing">
+    <h2 class="pricing-heading">A Plan for all Your Needs</h2>
+    <p>Simple and affordable price plans for you to head ahead.</p>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+
+
+          
+          <div class="card-header">
+            <h3 class="pricing-package-heading">Standard</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-heading">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-block btn-lg btn-outline-dark pricing-button">
+              Sign Up for Free
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-package-heading">Gold</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-heading">$4.9 / mo</h2>
+            <p>10 Matches Per Day</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-block btn-lg btn-dark pricing-button">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-package-heading">Premium</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-heading">$7.9 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Notification Unlocked</p>
+            <button type="button" class="btn btn-block btn-lg btn-dark pricing-button">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!--! Call to Action -->
+  <!-- 
+  <section class="colored-section" id="cta">
+    <h3 class="cta-heading">
+      Find the True Love of Your Life Today with Sparky 🤍
+    </h3>
+    <button class="btn btn-lg btn-dark cta-button cta-button" type="button">
+      <span class="fa-brands fa-apple"></span> Download
+    </button>
+    <button class="btn btn-lg btn-light" type="button">
+      <span class="fa-brands fa-google-play"></span> Download
+    </button>
+  </section> -->
+
+  <!-- !Contact -->
+  <section role="region" aria-label="contact-form" class="site-main-section white-section">
+    <div class="container">
+      <div class="card contact-form-container">
+        <div class="clearfix">
+          <div class="col-1-2">
+            <figure class="alert alert-error">
+              <div class="alert-content">
+                <img src="https://s3.amazonaws.com/codecademy-content/programs/ui-design/color-ui/icon-help.svg"
+                  alt="Help indicator" />
+                <p>Looks like you forgot to add your name!</p>
+              </div>
+            </figure>
+            <h2 class="section-header">Leave A Message</h2>
+            <form role="form" class="clearfix">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full Name" class="input-error" />
+              <label>Your Email</label>
+              <input type="email" placeholder="Email Address" />
+              <label>Select Contact Reason</label>
+              <select>
+                <option selected disabled>Please Select One</option>
+                <option>Customer Service Question</option>
+                <option>STudy Material Question</option>
+                <option>Website Question</option>
+              </select>
+              <label>Message</label>
+              <textarea placeholder="Provide as much detail as you can so we can address your issue."></textarea>
+              <input type="submit" value="Submit Message" class="button button-primary float-right" />
+            </form>
+          </div>
+          <div class="col-1-2">
+            <p><b>Our Location</b></p>
+            <img class="address-img" src="./images/ada-uni-location.png" alt="ADA University Location" />
+            <ul class="location-details">
+              <li><b>Address:</b> Ahmadbey Aghaoglu str. 61 Baku, 1008</li>
+              <li><b>Phone:</b> xxxxx xx xx</li>
+              <li><b>Email:</b> xxx@mail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ! Wide Footer -->
+  <div class="site-main-background" arai-hidden="true"></div>
+  </main>
+  <footer role="contentinfo" class="footer">
+    <div class="container">
+      <nav role="navigation" class="clearfix">
+        <ul class="col-1-4 footer-section">
+          <li>
+            <p><smalL>All Rights Reserved | &copy; <time>2023</time></smalL></p>
+          </li>
+        </ul>
+        <div class="col-1-4 footer-section" aria-labelledby="product-pages">
+          <p id="product-pages"><b>About</b></p>
+          <ul>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Schedule Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1-4 footer-section" aria-labelledby="support-pages">
+          <p id="support-pages"><b>Support</b></p>
+          <ul>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Documentation</a>
+            </li>
+            <li>
+              <a href="#">API Status</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1-4 footer-section" arai-labelledby="social-links">
+          <p id="support-pages"><b>Stay Up To Date</b></p>
+          <form>
+            <input type="email" placeholder="Your emaill address" class="footer-email-input">
+            <input type="submit" value="Submit" class="button button-secondary footer-email-button" />
+          </form>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ! Copyright Footer -->
+
+  <footer class="colored-section" id="footer">
+    <i class="fa-brands fa-twitter footer-i"></i>
+    <i class="fa-brands fa-facebook footer-i"></i>
+    <i class="fa-brands fa-instagram footer-i"></i>
+    <i class="fa-solid fa-envelope footer-i"></i>
+
+    <p>© Copyright eStat</p>
+  </footer>
+</body>
+
+
+
+<!--? ========================================== JS ==========================================  -->
+
+<!-- slide -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+<script>
+
+  container.animate(
+    {
+      transform: [
+        "rotateX(70deg) rotateZ(0deg)",
+        "rotateX(70deg) rotateZ(360deg)",
+      ],
+    },
+    {
+      duration: 20000,
+      iterations: Infinity,
+    }
+  );
+
+  var sideCount = 20;
+  var adjustment = (sideCount % 2) * 0.5;
+  var min = -sideCount / 2 + adjustment;
+  var max = sideCount / 2 + adjustment;
+
+  for (var y = min; y < max; y++) {
+    for (var x = min; x < max; x++) {
+      var box = createBox();
+      box.animate(
+        {
+          transform: ["translateZ(0px)", "translateZ(40px)"],
+          opacity: [1, 0],
+        },
+        {
+          delay: (x * x + y * y) * 20,
+          duration: 2000,
+          iterations: Infinity,
+          direction: "alternate",
+          easing: "ease-in",
+        }
+      );
+    }
+  }
+
+  function createBox() {
+    var box = document.createElement("div");
+    box.className = "box";
+    box.style.width = 100 / sideCount + "%";
+    box.style.height = 100 / sideCount + "%";
+    container.appendChild(box);
+    return box;
+  }
+
+
+  const player = document.getElementById("player");
+
+  player.addEventListener("ready", () => {
+    LottieInteractivity.create({
+      player: player.getLottie(),
+      mode: "cursor",
+      actions: [
+        {
+          type: "click",
+          forceFlag: true,
+        },
+      ],
+    });
+  });
+
+
+  // contact js
+
+// end of contact js
+
+</script>
+
+</html>
