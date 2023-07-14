@@ -196,6 +196,31 @@ p {
   }
 }
 
+
+/* text hover */
+
+.hover-container {
+  position: relative;
+}
+
+.hover-text {
+  visibility: hidden;
+  background-color: #fff;
+  color: #393939;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: visibility 0.2s ease-in-out;
+  font-size: 6px;
+}
+
+.hover-container:hover .hover-text {
+  visibility: visible;
+}
+
 /*! Title Section */
 
 .row {
