@@ -277,6 +277,11 @@ p {
   padding: 3%;
 }
 
+.feature-box h3{
+  color: #03045e;
+}
+
+
 .icon {
   color: #0076b6;
   margin-bottom: 1rem;
@@ -284,6 +289,26 @@ p {
 
 .icon:hover {
   color: #026397;
+  transition: 0.5s;
+
+}
+
+.feature-button {
+  padding: 6px 16px;
+  background-color: #0076b6;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  border-radius: 4px; /* Add border radius to the button */
+}
+
+.feature-button:hover {
+  background-color: #026397;
   transition: 0.5s;
 }
 
@@ -298,18 +323,8 @@ p {
   padding: 7% 15%;
 }
 
-/*! Press Section */
-#press {
-  padding-bottom: 3%;
-}
-
-.press-img {
-  width: 10%;
-  margin: 20px 20px 30px;
-}
-
-/*! Pricing */
-#pricing {
+/* Pricing */
+/* #pricing {
   padding: 100px;
 }
 
@@ -319,10 +334,10 @@ p {
 
 .pricing-button:hover {
   background-color: #9900f0;
-}
+} */
 
-/*! CTA Section */
-#cta {
+/* CTA Section */
+/* #cta {
   font-family: "Montserrat";
   font-weight: 600;
   padding: 7% 18%;
@@ -330,10 +345,10 @@ p {
 
 .cta-button {
   margin-right: 25px;
-}
+} */
+
 
 /*! Contact */
-
 .clearfix::after {
   content: " ";
   clear: both;
@@ -379,13 +394,11 @@ p {
 }
 
 p {
-  /* color: #414546; */
   font-size: 16px;
   margin: 0 0 15px;
 }
 
 li {
-  /* font-family: 'Roboto', Helvetica, sans-serif; */
   font-size: 16px;
   line-height: 23px;
   list-style: none;
