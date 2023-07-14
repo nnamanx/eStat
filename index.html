@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <title>eStat - Statistical Package</title>
 
-
   <!-- Bootstrap Scripts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
@@ -25,7 +24,6 @@
 
   <!-- Fav Icon <-->
   <link rel="icon" href="images/apple-touch-icon.png" />
-
 </head>
 
 <body>
@@ -41,21 +39,27 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" href="#">eStat</a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
               <!-- ? Dropdown Menu-->
               <li class="nav-item dropdown">
                 <a class="nav-link active" href="#cta">eStat Edu</a>
 
                 <ul class="dropdown__menu">
-                  <li class="dropdown__item"><a href="#" class="nav__link">Middle School</a></li>
-                  <li class="dropdown__item"><a href="#" class="nav__link">High School</a></li>
-                  <li class="dropdown__item"><a href="#" class="nav__link">University</a></li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Middle School</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">High School</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">University</a>
+                  </li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active hover-container" href="#pricing">eLearning <span class="hover-text">eBook
-                    specially designed for study of eStat and statistics</span></a>
+                <a class="nav-link active custom-tooltip" data-bs-toggle="tooltip" title="statistics book"
+                  href="#pricing">eLearning
+                </a>
               </li>
 
               <!-- ? Dropdown Menu-->
@@ -63,8 +67,12 @@
                 <a class="nav-link active" href="#footer">eStat Info</a>
 
                 <ul class="dropdown__menu">
-                  <li class="dropdown__item"><a href="#" class="nav__link">eStat ???</a></li>
-                  <li class="dropdown__item"><a href="#" class="nav__link">eStat Developers</a></li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">eStat ???</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">eStat Developers</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -85,7 +93,7 @@
           <button class="btn explore-btn btn-lg download-button" type="button">
             <span class="fa-solid fa-chart-pie"></span> Explore eStat
           </button>
-          <button class="btn btn-outline-light btn-lg download-button" type="button">
+          <button class="btn btn-outline-light explore-more-btn btn-lg download-button" type="button">
             <span class="fa-solid fa-magnifying-glass"></span> Explore More
           </button>
         </div>
@@ -95,7 +103,6 @@
           <div id="perspective">
             <div id="container"></div>
           </div>
-
         </div>
       </div>
     </div>
@@ -107,23 +114,35 @@
       <div class="col-lg-4 feature-box">
         <span class="icon fa-solid fa-house fa-4x"></span>
         <h3 class="feature-heading">eStat Middle School</h3>
-        <p>eStat Middle School is specifically designed the statistics education of Middle School students. In this
-          section, you can easily practice such statistical tools as Bar Graph, Pie Chart, Line Graph, Word Cloud, Stem
-          & Leaf Plot, Histogram, and Correlation Coefficiencts. </p>
+        <p>
+          eStat Middle School is specifically designed the statistics
+          education of Middle School students. In this section, you can easily
+          practice such statistical tools as Bar Graph, Pie Chart, Line Graph,
+          Word Cloud, Stem & Leaf Plot, Histogram, and Correlation
+          Coefficiencts.
+        </p>
       </div>
       <div class="col-lg-4 feature-box">
         <span class="icon fa-sharp fa-solid fa-building-columns fa-4x"></span>
         <h3 class="feature-heading">eStat High School</h3>
-        <p>eStat High School is primarily occupied with the further statistical tools offered for students studying in
-          High School level. In this section, you can closely get to know numerous Theories of Probability, Law of Large
-          Numbers, Dicrete, Binomial, Normal Distribution and much more.</p>
+        <p>
+          eStat High School is primarily occupied with the further statistical
+          tools offered for students studying in High School level. In this
+          section, you can closely get to know numerous Theories of
+          Probability, Law of Large Numbers, Dicrete, Binomial, Normal
+          Distribution and much more.
+        </p>
       </div>
       <div class="col-lg-4 feature-box">
         <i class="icon fa-solid fa-graduation-cap fa-4x"></i>
         <h3 class="feature-heading">eStat University</h3>
-        <p>In eStat University, you can benefit from more advanced statistical tools along with the topics involving
-          high and middle school level. In this section, eStat gives you the opportunity to master yourself in
-          Estimations, Testing Hypothesis, Regression, Time Series and even, much more topics.</p>
+        <p>
+          In eStat University, you can benefit from more advanced statistical
+          tools along with the topics involving high and middle school level.
+          In this section, eStat gives you the opportunity to master yourself
+          in Estimations, Testing Hypothesis, Regression, Time Series and
+          even, much more topics.
+        </p>
       </div>
     </div>
   </section>
@@ -135,17 +154,19 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h2 class="testimonial-heading">
-            eStat transformed my whole approach to statistics by empowering me with the knowledge and skills to analyze
-            data, make informed decisions, and excel in my academic and professional endeavors.
+            eStat transformed my whole approach to statistics by empowering me
+            with the knowledge and skills to analyze data, make informed
+            decisions, and excel in my academic and professional endeavors.
           </h2>
           <img class="testimonials-img" src="./images/lamia.jpeg" alt="lamiya-profile" />
           <em>Lamiya, ADA University</em>
         </div>
         <div class="carousel-item">
           <h2 class="testimonial-heading">
-            The well-tailored tools offered by eStat are truly assist the students interested in mathematics and
-            statistics. I enjoy every second of my time when I am using this great freeware to visualize and analyze the
-            data.
+            The well-tailored tools offered by eStat are truly assist the
+            students interested in mathematics and statistics. I enjoy every
+            second of my time when I am using this great freeware to visualize
+            and analyze the data.
           </h2>
           <img class="testimonials-img" src="testimonial1.jpg" alt="lady-profile" />
           <em>Math, Illinois</em>
@@ -163,7 +184,6 @@
       </button>
     </div>
   </section>
-
 
   <!--! Pricing -->
   <!-- <section class="white-section" id="pricing">
@@ -294,7 +314,9 @@
       <nav role="navigation" class="clearfix">
         <ul class="col-1-4 footer-section">
           <li>
-            <p><smalL>All Rights Reserved | &copy; <time>2023</time></smalL></p>
+            <p>
+              <small>All Rights Reserved | &copy; <time>2023</time></small>
+            </p>
           </li>
         </ul>
         <div class="col-1-4 footer-section" aria-labelledby="product-pages">
@@ -328,16 +350,14 @@
         <div class="col-1-4 footer-section" arai-labelledby="social-links">
           <p id="support-pages"><b>Stay Up To Date</b></p>
           <form>
-            <input type="email" placeholder="Your emaill address" class="footer-email-input">
+            <input type="email" placeholder="Your emaill address" class="footer-email-input" />
             <input type="submit" value="Submit" class="button button-secondary footer-email-button" />
           </form>
         </div>
       </nav>
     </div>
   </div>
-
 </body>
-
 
 <!--? ========================================== JS ==========================================  -->
 
@@ -345,9 +365,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-
 <script>
-
   container.animate(
     {
       transform: [
@@ -408,7 +426,15 @@
       ],
     });
   });
+</script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
 </script>
 
 </html>
