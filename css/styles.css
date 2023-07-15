@@ -1,4 +1,11 @@
 /*! General CSS*/
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -73,6 +80,10 @@ p {
   font-weight: 400;
 }
 
+.navbar.scrolled {
+  background-color: #03045e;
+}
+
 @media (max-width: 992px) {
   .navbar-brand {
     padding-left: 20px;
@@ -80,7 +91,29 @@ p {
 }
 
 .navbar {
+  border: 1px solid red;
   padding: 0 0 4.5rem;
+  overflow: hidden;
+  /* background-color: #333; */
+  position: fixed;
+  top: 0;
+  width: 80%;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
 /* Underline */
@@ -277,7 +310,7 @@ p {
   padding: 3%;
 }
 
-.feature-box h3{
+.feature-box h3 {
   color: #03045e;
 }
 
@@ -304,7 +337,8 @@ p {
   font-size: 16px;
   transition: background-color 0.5s ease;
   cursor: pointer;
-  border-radius: 4px; /* Add border radius to the button */
+  border-radius: 4px;
+  /* Add border radius to the button */
 }
 
 .feature-button:hover {
@@ -416,12 +450,6 @@ label {
 }
 
 /* Structure Styles */
-.container {
-  margin: 0 auto;
-  max-width: 1160px;
-  padding: 0 15px;
-}
-
 .divider {
   border: none;
   border-bottom: 1px solid #f2f3f5;
@@ -473,17 +501,12 @@ label {
   }
 }
 
-.footer .logo {
-  margin-bottom: 5px;
-  width: 100px;
-}
-
 .footer a {
   color: #0077b6;
   text-decoration: none;
 }
 
-.summafooterry p {
+.footer p {
   margin-bottom: 5px;
 }
 
@@ -573,12 +596,12 @@ label {
   padding: 10px 30px;
 }
 
-.card {
+/* .card {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
   padding: 30px 30px 15px;
-}
+} */
 
 input,
 select,
