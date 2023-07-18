@@ -1,4 +1,26 @@
+/* ! Constants  */
+:root {
+  /* --main-color: #24caac;
+  --color-1: #eaa023;
+  --color-2: #bc3081;
+  --color-3: #1877f2;
+  --color-4: #f21818;
+  --color-5: #34a853;
+  --color-6: #d35100;
+  --dark-800: rgb(37, 43, 59);
+  --dark-700: #253240;
+  --white-900: #ffffff;
+  --white-800: rgba(255, 255, 255, 0.8);
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+  scroll-behavior: smooth;
+}
+
+
 /*! General CSS*/
+* {
+  box-sizing: border-box;
+  outline: none;
+}
 
 html,
 body {
@@ -487,7 +509,7 @@ label {
 }
 
 /* footer */
-.footer {
+/* .footer {
   padding: 30px 30px 60px;
 }
 
@@ -529,10 +551,10 @@ label {
   .footer-email-button {
     width: 37.5% !important;
   }
-}
+} */
 
 /* Component Styles */
-.alert {
+/* .alert {
   border-radius: 3px;
   margin-bottom: 15px;
   padding: 10px 15px;
@@ -545,9 +567,9 @@ label {
 }
 
 .alert-error {
-  background-color: #fc472e;
-  /* background-color: #9900F0; */
-}
+  background-color: #fc472e; */
+/* background-color: #9900F0; */
+/* }
 
 .alert img {
   display: inline-block;
@@ -565,9 +587,9 @@ label {
 .button {
   border-radius: 3px;
   color: #ffffff;
-  display: inline-block;
-  /* font-family: 'Roboto', Helvetica, sans-serif; */
-  font-size: 16px;
+  display: inline-block; */
+/* font-family: 'Roboto', Helvetica, sans-serif; */
+/* font-size: 16px;
   line-height: normal;
   padding: 15px 30px;
   text-align: center;
@@ -581,8 +603,8 @@ label {
 
 .button-primary {
   background-color: #0077b6;
-}
-
+} */
+/* 
 .button-secondary {
   background-color: #42a5f5;
 }
@@ -594,7 +616,7 @@ label {
 .button-small {
   font-size: 13px;
   padding: 10px 30px;
-}
+} */
 
 /* .card {
   background-color: #ffffff;
@@ -603,7 +625,7 @@ label {
   padding: 30px 30px 15px;
 } */
 
-input,
+/* input,
 select,
 textarea {
   background-color: #ffffff;
@@ -640,7 +662,7 @@ textarea {
 }
 
 /* Page Styles */
-
+/* 
 .site-main-section {
   margin-top: 2rem;
 }
@@ -665,6 +687,133 @@ textarea {
 .location-details li {
   display: block;
   margin-top: 15px;
+} */
+
+
+/* FOOTER */
+.footer {
+  padding: 60px 0;
+  border: 1px solid red;
+}
+
+.footer-item {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-item h2 {
+  color: var(--white-900);
+  font-weight: 500;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  margin: 0 0 30px;
+}
+
+.footer-about .social-links {
+  margin-top: 20px;
+}
+
+.footer-about .social-links a {
+  display: inline-block;
+  border: 1px solid transparent;
+  height: 35px;
+  width: 35px;
+  color: var(--main-color);
+  line-height: 35px;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+}
+
+.footer-about .social-links a:hover {
+  border-color: var(--main-color);
+}
+
+.footer-quick-links ul li a {
+  display: block;
+  color: var(--white-800);
+  padding: 8px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-quick-links ul li a:hover {
+  padding-left: 10px;
+  color: var(--color-1);
+}
+
+.footer-contact p {
+  margin: 0 0 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.footer-contact p i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.footer-news .form-control {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-news .btn {
+  height: 45px;
+  width: 100%;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: #24caac;
+}
+
+@media (max-width: 991px) {
+  .footer-item {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-item p i {
+    position: relative;
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .footer-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-item {
+    text-align: center;
+  }
+
+  .footer-item p i {
+    position: relative;
+    text-align: center;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .footer-item,
+  .review-item {
+    text-align: center;
+  }
+
+  .footer-item p i {
+    position: relative;
+    text-align: center;
+    padding-right: 10px;
+  }
 }
 
 /* end of contact & footer*/
