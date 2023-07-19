@@ -105,11 +105,6 @@ p {
   font-size: 17px;
 }
 
-.navbar a:hover {
-  background: var(--white-color);
-  color: black;
-}
-
 /* Underline */
 .navbar li {
   display: inline-block;
