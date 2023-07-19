@@ -27,7 +27,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding-top: 8rem;
 }
 
 h1,
@@ -77,8 +77,8 @@ p {
   color: var(--white-color);
   font-family: "Ubuntu";
   font-weight: 400;
-  border: 1px solid green;
-  font-size: 3.5rem;
+  font-size:  3.5rem;
+  margin-left: 3rem;
 
 }
 
@@ -90,9 +90,7 @@ p {
 
 .navbar {
   background-color: var(--main-color);
-  border: 1px solid red;
-  /* padding: 0 0 4.5rem; */
-
+  /* border: 1px solid green; */
 }
 
 .navbar a {
@@ -100,9 +98,8 @@ p {
   display: block;
   color: --white;
   text-align: center;
-  padding: 14px 16px;
+  padding: .2rem 1rem;
   text-decoration: none;
-  font-size: 17px;
 }
 
 /* Underline */
@@ -129,7 +126,6 @@ p {
 }
 
 /* End of item underline */
-
 .nav-item {
   padding: 0 18px;
 }
@@ -138,6 +134,7 @@ p {
   font-family: "Montserrat";
   font-weight: lighter;
   font-size: 1.2rem;
+  /* border: 1px solid red; */
 }
 
 .navbar>.container-fluid {
@@ -164,6 +161,7 @@ p {
 .dropdown__menu {
   display: none;
   width: fit-content;
+  background-color: var(--main-color);
 }
 
 .dropdown__menu li {
@@ -175,10 +173,12 @@ p {
   /* centering dropdown text */
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
 }
 
 .dropdown:hover>.dropdown__menu {
   display: block;
+  margin-top: 2rem;
 }
 
 .dropdown:hover .dropdown__icon {
@@ -225,7 +225,6 @@ p {
 }
 
 /*! Title Section */
-
 .row {
   display: flex;
   justify-content: space-around;
