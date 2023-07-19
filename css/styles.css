@@ -13,6 +13,8 @@
 * {
   box-sizing: border-box;
   outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -41,14 +43,15 @@ p {
   color: var(--grey-color);
 }
 
+
 /*! Sections */
 .colored-section {
   background-color: var(--main-color);
-  color: white;
+  color: var(--white-color);
 }
 
 .white-section {
-  background-color: white;
+  background-color: var(--white-color);
 }
 
 /*! Headings */
@@ -69,27 +72,10 @@ p {
   line-height: 1.5;
 }
 
-.pricing-heading {
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-.pricing-package-heading {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.cta-heading {
-  font-size: 3rem;
-  padding-bottom: 50px;
-  line-height: 1.5;
-  font-weight: 600;
-}
 
 /*! Navigation Bar */
 .navbar-brand {
-  color: #fff;
+  color: var(--white-color);
   font-family: "Ubuntu";
   font-size: 3.5rem;
   font-weight: 400;
@@ -278,7 +264,8 @@ p {
 
 .explore-btn {
   background-color: var(--main-dark-color);
-  color: #fff;
+  color: var(--white-color);
+
 }
 
 .explore-btn:hover,
@@ -344,7 +331,7 @@ p {
 .feature-button {
   padding: 6px 16px;
   background-color: #0076b6;
-  color: #ffffff;
+  color: var(--white-color);
   border: none;
   text-align: center;
   text-decoration: none;
@@ -353,6 +340,9 @@ p {
   transition: background-color 0.5s ease;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 5px 10px 12px 4px rgba(0, 119, 182, 0.35);
+  -webkit-box-shadow: 5px 10px 12px 4px rgba(0, 119, 182, 0.35);
+  -moz-box-shadow: 5px 10px 12px 4px rgba(0, 119, 182, 0.35);
   /* Add border radius to the button */
 }
 
@@ -489,7 +479,7 @@ label {
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .footer-item {
@@ -541,13 +531,14 @@ label {
   color: var(--main-color-shadow);
 }
 
-.footer-contact{
+.footer-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.baseline{
+
+.baseline {
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -563,8 +554,21 @@ label {
 }
 
 .rights {
-  color: var(--white-color);
-  margin-top: 1rem;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rights p {
+  line-height: normal;
+}
+
+.footer-logo {
+  font-size: 4rem;
+  color: var(--main-color);
+  font-family: "Ubuntu";
 }
 
 
