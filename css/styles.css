@@ -43,7 +43,6 @@ p {
   color: var(--grey-color);
 }
 
-
 /*! Sections */
 .colored-section {
   background-color: var(--main-color);
@@ -74,15 +73,13 @@ p {
 
 
 /*! Navigation Bar */
-.navbar-brand {
+.navbar-logo {
   color: var(--white-color);
   font-family: "Ubuntu";
-  font-size: 3.5rem;
   font-weight: 400;
-}
+  border: 1px solid green;
+  font-size: 3.5rem;
 
-.navbar.scrolled {
-  background-color: var(--main-dark-color);
 }
 
 @media (max-width: 992px) {
@@ -92,13 +89,9 @@ p {
 }
 
 .navbar {
+  background-color: var(--main-color);
   border: 1px solid red;
-  padding: 0 0 4.5rem;
-  overflow: hidden;
-  /* background-color: #333; */
-  position: fixed;
-  top: 0;
-  width: 80%;
+  /* padding: 0 0 4.5rem; */
 
 }
 
@@ -370,8 +363,6 @@ p {
   display: table;
 }
 
-/* Typography Styles */
-
 @media (min-width: 720px) {
   h1 {
     font-size: calc(64px / 1.25);
@@ -466,7 +457,6 @@ label {
     margin-right: 2.5%;
   }
 }
-
 
 /* ! FOOTER */
 .footer {
