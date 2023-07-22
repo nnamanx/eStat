@@ -288,6 +288,7 @@ p {
   background: var(--main-dark-color);
 }
 
+
 @media (max-width: 1195px) {
   .first-image {
     position: static;
@@ -295,18 +296,27 @@ p {
   }
 }
 
+/* ! Donation Popup */
 .popup-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px 20px;
+  padding: 15px 25px;
   background-color: var(--main-dark-color);
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.popup-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* end of popup */
 
 /* !Features Section */
 #features {
