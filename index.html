@@ -95,12 +95,13 @@
 
         <div class="col-lg-6">
           <!--! Animation -->
-
           <div id="perspective">
             <div id="container"></div>
           </div>
         </div>
       </div>
+      <!-- Popup button -->
+      <button id="popupBtn" class="popup-btn">Contact Us</button>
     </div>
   </section>
 
@@ -193,7 +194,7 @@
   </section>
 
   <!-- ! FOOTER SECTION START-->
-  <footer class="footer white-section" id="footer">
+  <footer class="footer white-section" id="contact">
     <div class="container">
 
       <!-- <div class="footer-item footer-about">
@@ -312,6 +313,43 @@
   });
 </script>
 
-<!-- Scrolling navbar -->
+<!-- Donation PopUp -->
+<script>
+  // Get the popup button element
+  const popupBtn = document.getElementById('popupBtn');
+
+  // Function to scroll to the contact part (footer)
+  function scrollToContact() {
+    const contactPart = document.getElementById('contact');
+    const offset = 10; // Optional offset to adjust the scrolling position
+    const bodyRect = document.body.getBoundingClientRect();
+    const contactRect = contactPart.getBoundingClientRect();
+    const scrollToPosition = contactRect.top - bodyRect.top - offset;
+    window.scrollBy({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  // Add click event listener to the popup button
+  popupBtn.addEventListener('click', () => {
+    scrollToContact();
+  });
+
+  // Function to toggle the visibility of the popup button
+  function togglePopupButton() {
+    const contactPart = document.getElementById('contact');
+    const contactRect = contactPart.getBoundingClientRect();
+    if (contactRect.top <= window.innerHeight && contactRect.bottom >= 0) {
+      popupBtn.style.display = 'none';
+    } else {
+      popupBtn.style.display = 'block';
+    }
+  }
+
+  // Add scroll event listener to toggle the visibility of the button
+  window.addEventListener('scroll', togglePopupButton);
+</script>
+<!-- end of Dontation popup -->
 
 </html>
