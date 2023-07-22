@@ -77,9 +77,13 @@ p {
   color: var(--white-color);
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size:  3.5rem;
+  font-size: 3.5rem;
   margin-left: 3rem;
 
+}
+
+.navbar-logo:hover {
+  color: var(--white-color);
 }
 
 @media (max-width: 992px) {
@@ -268,6 +272,7 @@ p {
   width: 50vmin;
   height: 50vmin;
   perspective: 70vmin;
+  /* border: 1px solid red; */
 }
 
 #container {
@@ -288,6 +293,8 @@ p {
     transform: none;
   }
 }
+
+
 
 /* !Features Section */
 #features {
@@ -538,15 +545,13 @@ label {
 }
 
 .rights {
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: fit-content;
+
 }
 
 .rights p {
   line-height: normal;
+  margin-top: 2rem;
 }
 
 .footer-logo {
