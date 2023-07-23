@@ -200,6 +200,22 @@ p {
   color: var(--white-color);
 }
 
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item .dropdown__menu {
+    position: static;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item.active .dropdown__menu {
+    display: block;
+  }
+}
+
 /*! Title Section */
 .row {
   display: flex;
