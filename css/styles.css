@@ -656,43 +656,8 @@ label {
 }
 
 /*! ============= Responsiveness ============= */
-
-
-/* Dropdown */
-@media screen and (min-width: 576px) {
-  .dropdown {
-    position: relative;
-  }
-
-  .dropdown__menu {
-    position: fixed;
-    margin: 0;
-    top: calc(var(--header-height) + 1rem);
-    padding: 0.5rem 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    border: 1px solid red;
-  }
-
-  .dropdown__item {
-    margin: 0.5rem 0;
-    /* display: inline-block; */
-  }
-}
-
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-  h1.main-heading {
-    font-size: 32px;
-  }
-}
-
-
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
   h1.main-heading {
     font-size: 28px;
@@ -727,12 +692,15 @@ label {
   .custom-tooltip .tooltip-inner {
     display: none;
   }
+    /* Animation */
+    #container{
+      margin-left: calc((100vw - 90vmin) / 2);
+    }
 
 }
 
-
 /* Small devices (phones, 576px and up) */
-@media (max-width: 576px) {
+@media (min-width: 576px) {
 
   /* Center the carousel control buttons on smaller screens */
   .carousel-control-prev,
@@ -741,4 +709,24 @@ label {
     bottom: auto;
     transform: translateY(-50%);
   }
+
+    /* Animation */
+    #container{
+      margin-left: calc((100vw - 60vmin) / 2);
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  h1.main-heading {
+    font-size: 32px;
+  }
+
+    /* Animation */
+    #container{
+      margin-left: 0;
+    }
+
 }
