@@ -682,55 +682,6 @@ label {
 
 
 
-/* Footer */
-/* @media (max-width: 575px) {
-  .footer-item {
-    text-align: center;
-    border: 1px solid red;
-    
-  }
-
-  .footer-item p i {
-    position: relative;
-    text-align: center;
-    padding-right: 10px;
-  }
-} */
-
-/* Footer */
-/* @media (max-width: 991px) {
-  .footer-item {
-    width: 50%;
-    text-align: center;
-  
-  }
-
-  .footer-item p i {
-    position: relative;
-    text-align: center;
-    padding-right: 10px;
-  }
-
-  .footer-item {
-    margin-bottom: 30px;
-  }
-} */
-
-/* Footer */
-/* @media (max-width: 767px) {
-  .footer-item {
-    text-align: center;
-  
-  }
-
-  .footer-item p i {
-    position: relative;
-    text-align: center;
-    padding-right: 10px;
-  }
-} */
-
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
@@ -767,7 +718,7 @@ label {
   }
 
   /* Show the dropdown menu on click for small devices */
-  .dropdown.active > .dropdown__menu {
+  .dropdown.active>.dropdown__menu {
     /* display: block; */
     margin-top: 1.35rem;
   }
