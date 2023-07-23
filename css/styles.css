@@ -201,18 +201,20 @@ p {
 }
 
 @media (max-width: 991.98px) {
-  .navbar-nav {
-    margin-top: 10px;
-  }
-
   .navbar-nav .nav-item .dropdown__menu {
     position: static;
     display: none;
     margin-top: 10px;
+    /* Optional: Adjust the spacing as needed */
   }
 
   .navbar-nav .nav-item.active .dropdown__menu {
     display: block;
+  }
+
+  /* Remove the underline on mobile and tablet-sized devices */
+  .navbar li::after {
+    display: none;
   }
 }
 
