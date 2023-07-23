@@ -139,7 +139,7 @@ p {
   /* border: 1px solid red; */
 }
 
-.navbar > .container-fluid {
+.navbar>.container-fluid {
   padding-left: 0;
   padding-bottom: 0;
 }
@@ -178,7 +178,7 @@ p {
   margin-top: 10rem;
 }
 
-.dropdown:hover > .dropdown__menu {
+.dropdown:hover>.dropdown__menu {
   display: block;
   margin-top: 2rem;
 }
@@ -776,6 +776,7 @@ label {
 }
 
 @media (max-width: 575px) {
+
   .footer-item,
   .review-item {
     text-align: center;

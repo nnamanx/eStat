@@ -29,9 +29,11 @@
 </head>
 
 <body id="home">
+  <!-- ! Landing -->
   <section class="colored-section" id="title">
     <div class="container-fluid">
-      <!--! Nav Bar -->
+
+      <!--? Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -76,7 +78,7 @@
         </div>
       </nav>
 
-      <!--! Title -->
+      <!--? Title -->
       <div class="row">
         <div class="col-lg-6 mainpage-content">
           <h1 class="main-heading">
@@ -99,7 +101,7 @@
         </div>
       </div>
 
-      <!-- ? Popup button -->
+      <!--? Popup button -->
       <div class="popup-container">
         <button id="popupBtn" class="popup-btn">
           <span class="popup-text">
@@ -225,14 +227,14 @@
         </div>
       </div>
 
+      <!-- ? Donation Form -->
       <div class="donation-section">
-        <!-- Donation content goes here -->
         <h2>Support Us</h2>
         <p>
           Help us continue our mission of providing free statistical
           education. <br />Your donation will be greatly appreciated.
         </p>
-        <!-- Donation form -->
+        <!-- form -->
         <form class="donation-form">
           <label for="fullName">Full Name:</label>
           <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
@@ -248,7 +250,7 @@
       </div>
     </div>
 
-    <!-- Copyright -->
+    <!--? Copyright -->
     <div class="rights">
       <p>Copyright &copy; 2023 eStat. All Rights Reserved</p>
     </div>
@@ -324,7 +326,7 @@
   });
 </script>
 
-<!-- Tooltip -->
+<!--? Tooltip -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var tooltipTriggerList = [].slice.call(
@@ -336,9 +338,9 @@
   });
 </script>
 
-<!-- Donation PopUp -->
+<!--? Donation PopUp -->
 <script>
-  // Get the popup button element
+  // The popup button element
   const popupBtn = document.getElementById("popupBtn");
 
   // Function to scroll to the contact part (footer)
@@ -354,7 +356,7 @@
     });
   }
 
-  // Add click event listener to the popup button
+  // Click event listener to the popup button
   popupBtn.addEventListener("click", () => {
     scrollToContact();
   });
@@ -370,9 +372,9 @@
     }
   }
 
-  // Add scroll event listener to toggle the visibility of the button
+  // Scroll event listener to toggle the visibility of the button
   window.addEventListener("scroll", togglePopupButton);
 </script>
-<!-- end of Dontation popup -->
+<!-- end of the Dontation Popup -->
 
 </html>
