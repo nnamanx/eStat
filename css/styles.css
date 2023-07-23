@@ -148,7 +148,7 @@ p {
   margin: 5% 3% 5% 0;
 }
 
-/*=== Dropdown ===*/
+/*! === Dropdown ===*/
 .dropdown__link {
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@ p {
 
 .dropdown:hover>.dropdown__menu {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1.35rem;
 }
 
 .dropdown:hover .dropdown__icon {
@@ -201,6 +201,7 @@ p {
   /* The underline when hovered */
   transform: scaleX(0.9);
 }
+
 
 @media screen and (min-width: 576px) {
   .dropdown {
