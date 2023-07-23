@@ -147,42 +147,36 @@ p {
 }
 
 /*! === Dropdown ===*/
-.dropdown__link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.dropdown__icon {
-  font-size: 1.3rem;
-  transition: 0.5s;
-}
-
 .dropdown__menu {
   display: none;
-  width: fit-content;
+  width: 15rem;
   background-color: var(--main-color);
+  position: absolute;
 }
 
 .dropdown__menu li {
   display: flex;
+  margin-right: 2rem;
+}
+
+.dropdown__menu li a {
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown__item {
   margin: 1rem 0;
-  /* centering dropdown text */
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
 }
 
 .dropdown:hover>.dropdown__menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 1.35rem;
-}
 
-.dropdown:hover .dropdown__icon {
-  transform: rotate(180deg);
 }
 
 .nav__link {
@@ -197,7 +191,7 @@ p {
 
 .nav__link:hover::after {
   /* The underline when hovered */
-  transform: scaleX(0.9);
+  transform: scaleX(1);
 }
 
 
@@ -242,7 +236,6 @@ p {
 }
 
 /* !Animation */
-
 #perspective {
   margin-left: calc((50vw - 45vmin) / 2);
   margin-top: calc((100vh - 95vmin) / 4);
@@ -568,7 +561,6 @@ label {
 }
 
 /* ! Donation Section */
-
 .donation-section {
   display: flex;
   flex-direction: column;
@@ -657,47 +649,9 @@ label {
 
 /*! ============= Responsiveness ============= */
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
 
-  h1.main-heading {
-    font-size: 28px;
-  }
 
-  .dropdown__menu {
-    /* Adjust the width and background color for small devices */
-    width: 100%;
-    background-color: var(--main-color);
-  }
-
-  .dropdown__item {
-    /* Remove the margin-top for small devices to center the dropdown text */
-    margin-top: 0;
-  }
-
-  /* Show the dropdown icon for small devices */
-  .dropdown__icon {
-    /* display: inline-block; */
-    font-size: 1.3rem;
-    transition: 0.5s;
-    transform: rotate(0deg);
-  }
-
-  /* Show the dropdown menu on click for small devices */
-  .dropdown.active>.dropdown__menu {
-    /* display: block; */
-    margin-top: 1.35rem;
-  }
-
-  /* Hide the tooltip for small devices */
-  .custom-tooltip .tooltip-inner {
-    display: none;
-  }
-    /* Animation */
-    #container{
-      margin-left: calc((100vw - 90vmin) / 2);
-    }
-
-}
 
 /* Small devices (phones, 576px and up) */
 @media (min-width: 576px) {
@@ -710,10 +664,10 @@ label {
     transform: translateY(-50%);
   }
 
-    /* Animation */
-    #container{
-      margin-left: calc((100vw - 60vmin) / 2);
-    }
+  /* Animation */
+  #container {
+    margin-left: calc((100vw - 65vmin) / 2);
+  }
 
 }
 
@@ -724,9 +678,9 @@ label {
     font-size: 32px;
   }
 
-    /* Animation */
-    #container{
-      margin-left: 0;
-    }
+  /* Animation */
+  #container {
+    margin-left: 0;
+  }
 
 }
